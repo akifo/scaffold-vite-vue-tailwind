@@ -21,8 +21,8 @@ https://github.com/akifo/scaffold-vite-vue-tailwind/blob/main/vite.config.ts の
 
 ```json
 {
--  base: "akiho.scaffold-vite-vue-tailwind/",
-+  base: "akiho.my-project/",
+-  base: "scaffold-vite-vue-tailwind/",
++  base: "my-project/",
 }
 ```
 
