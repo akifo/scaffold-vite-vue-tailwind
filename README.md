@@ -17,5 +17,16 @@ npx degit akifo/scaffold-vite-vue-tailwind my-project
 https://github.com/akifo/scaffold-vite-vue-tailwind/settings/pages で Build and deployment
  を GitHub Actions に変更すると GitHub Actions で自動デプロイが動きます。
 
+https://github.com/akifo/scaffold-vite-vue-tailwind/blob/main/vite.config.ts の base をリポジトリ名に変更してください。
+
+```json
+{
+-  base: "akiho.scaffold-vite-vue-tailwind/",
++  base: "akiho.my-project/",
+}
+```
+
+GitHub Pages が不要な場合は、この設定を削除してください。
+
 ### Vervel
 手動で連携してください。
