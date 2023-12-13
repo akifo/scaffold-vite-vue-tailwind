@@ -27,5 +27,13 @@
   },
   "volta": {
     "node": "18.16.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,vue}": "eslint --cache --fix"
   }
 }
