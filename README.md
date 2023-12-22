@@ -8,6 +8,12 @@ npx degit akifo/scaffold-vite-vue-tailwind .
 npx degit akifo/scaffold-vite-vue-tailwind my-project
 ```
 
+## prepare
+
+```sh
+nr prepare
+```
+
 ## deploy
 
 
