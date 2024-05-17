@@ -8,9 +8,27 @@ module.exports = {
     "@vue/eslint-config-prettier",
     "@vue/eslint-config-typescript/recommended",
   ],
+  plugins: ["import", "unused-imports"],
   rules: {
     "no-console": "error",
     "vue/no-unused-vars": "error",
     "vue/no-ref-as-operand": "error",
+    "import/order": [
+      "warn",
+      {
+        groups: [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "object",
+          "type",
+        ],
+        pathGroupsExcludedImportTypes: ["builtin"],
+        alphabetize: { order: "asc", caseInsensitive: true },
+      },
+    ],
   },
 };
