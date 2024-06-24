@@ -21,10 +21,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      - name: npm install, build
+      - name: pnpm install, build
         run: |
-          npm install
-          npm run build
+          pnpm install
+          pnpm run build
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
