@@ -34,5 +34,5 @@ https://github.com/akifo/scaffold-vite-vue-tailwind/blob/main/vite.config.ts の
 
 GitHub Pages が不要な場合は、この設定を削除してください。
 
-### Vervel
+### Vercel
 手動で連携してください。
