@@ -23,7 +23,7 @@ nr prepare
 https://github.com/akifo/scaffold-vite-vue-tailwind/settings/pages で Build and deployment
  を GitHub Actions に変更すると GitHub Actions で自動デプロイが動きます。
 
-https://github.com/akifo/scaffold-vite-vue-tailwind/blob/main/vite.config.ts の base をリポジトリ名に変更してください。
+https://github.com/akifo/scaffold-vite-vue-tailwind/blob/main/vite.config.mts の base をリポジトリ名に変更してください。
 
 ```json
 {
@@ -36,3 +36,24 @@ GitHub Pages が不要な場合は、この設定を削除してください。
 
 ### Vercel
 手動で連携してください。
+
+## Tech Stack
+
+- **Vue 3** - 最新のComposition APIとscript setup構文
+- **Vite 6** - 高速なビルドツールと開発サーバー
+- **TypeScript** - 型安全性の確保
+- **Tailwind CSS 4** - ユーティリティファーストのCSSフレームワーク
+- **ESLint 9** - 最新のflat config形式でのコード品質管理
+- **Husky 9** + **lint-staged** - Git pre-commitフックでのコード品質確保
+
+## Configuration Notes
+
+### Tailwind CSS 4
+このプロジェクトはTailwind CSS v4を使用しています。v3からの主な変更点：
+
+- 設定ファイル（`tailwind.config.js`、`postcss.config.js`）が不要
+- CSS内で`@import "tailwindcss"`を使用
+- パフォーマンスが大幅に向上
+
+### ESLint 9
+最新のflat config形式（`eslint.config.js`）を使用しています。
